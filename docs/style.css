@@ -1,0 +1,112 @@
+body {
+    background-color: burlywood;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: pink;
+}
+
+body {
+    background-color: burlywood;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* SVG */
+.my-svg {
+    display: block;
+    margin: 30px auto;
+}
+
+/* Glowing and spinning circle */
+#mainCircle {
+    fill: lightpink;
+    stroke: hotpink;
+    stroke-width: 5;
+
+    /* Glow */
+    filter: drop-shadow(0 0 15px hotpink);
+
+    /* Spin */
+    animation: spin 4s linear infinite;
+
+    transform-origin: center;
+}
+
+/* Make the circle spin */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hover effect */
+#mainCircle:hover {
+    filter: drop-shadow(0 0 30px hotpink);
+}
+
+/* Text inside circle */
+.svg-text {
+    font-size: 24px;
+    font-weight: bold;
+    fill: hotpink;
+    pointer-events: none;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: burlywood;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+    color: black;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+h1 {
+    font-family: 'Allura', cursive;
+    font-size: 70px;
+}
